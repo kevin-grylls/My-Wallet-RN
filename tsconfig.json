@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "lib": ["es6"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["./components/*"],
+      "constants/*": ["./constants/*"],
+      "screen/*": ["./screen/*"],
+      "assets/*": ["./assets/*"],
+      "stores/*": ["./stores/*"],
+      "utils/*": ["./utils/*"],
+      "models/*": ["./models/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
