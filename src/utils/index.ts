@@ -1,5 +1,2 @@
-const getIndex = (idx: number) => new Date().getTime().toString() + idx;
-
-export default {
-  getIndex: getIndex
-};
+export * from "./Key";
+export * from "./Storage";

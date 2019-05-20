@@ -1,0 +1,5 @@
+{
+  "main": "navigation.ts",
+  "name": "navigation",
+  "private": true
+}

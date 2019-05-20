@@ -1,0 +1,20 @@
+export default {
+  API_KEY: "api_key",
+  DJANGO_SERVER: "http://localhost:8000",
+  SIGNUP: "/wallet/create/",
+  LOGIN: "/wallet/login/",
+  ACCOUNTS: "/wallet/list/",
+  DEPLOY: "/wallet/deploy/",
+  TRANSFER_TOKEN: "/wallet/transfer_token/",
+  TRANSFER_TOKEN_FROM: "/wallet/transfer_token_from/",
+  BALANCE: "/wallet/balance_of/",
+  BALANCE_ALL: "/wallet/balance_of_all/",
+  TRANSACTION: "/wallet/get_transaction_of/",
+  TRANSACTION_ALL: "/wallet/get_transaction_all/",
+  MINING_STATUS: "/wallet/status_miner/",
+  MINING_SET: "/wallet/set_miner/",
+  TOTAL_SUPPLY: "/wallet/total_supply?ca=address",
+  FUNCTIONS: "/wallet/all_functions?ca=address",
+  UNLOCK: "/wallet/unlock_all/",
+  COINBASE: "/wallet/get_coinbase/"
+};

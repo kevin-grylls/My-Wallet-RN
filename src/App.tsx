@@ -1,21 +1,32 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { Provider } from "./contexts/AppContext";
+import Navigation from "./navigation/navigation";
+import { AppLoading } from "./components";
 
-export default class App extends React.Component {
-  render() {
+class App extends React.Component {
+  state = {
+    loaded: false
+  };
+
+  loadAssets = async () => {
+    this.setState({ loaded: true });
+  };
+
+  componentWillMount() {
+    this.loadAssets();
+  }
+
+  public render() {
+    if (!this.state.loaded) {
+      return <AppLoading startAsync={null} onFinish={null} />;
+    }
+
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <Provider>
+        <Navigation />
+      </Provider>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

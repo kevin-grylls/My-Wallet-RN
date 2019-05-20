@@ -1,0 +1,5 @@
+{
+  "main": "AppContext.tsx",
+  "name": "AppContext",
+  "private": true
+}
